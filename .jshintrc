@@ -1,0 +1,72 @@
+{
+  // esversion, 5 will allow es5 syntax, 6 will allow es6 syntax
+  "esversion": 6,
+  // enforce use strict at the function level, es5 and up however
+  "strict": true,
+  // enforce ES6 let & const
+  "varstmt": true,
+  /*
+  This option can be used to specify a white list of global variables that are
+  not formally defined in the source code. This is most useful when combined
+  with the undef option in order to suppress warnings for project-specific
+  global variables.
+
+  Setting an entry to true enables reading and writing to that variable.
+  Setting it to false will trigger JSHint to consider that variable read-only.
+
+  See also the "environment" options: a set of options to be used as short hand
+  for enabling global variables defined in common JavaScript environments.
+  */
+  // document, window, navigator, canvas, filereader. NOT alert, console.
+  "browser": true,
+  //"node": false,
+  // alert, console
+  "devel": true,
+  // jquery
+  //"jquery": false,
+  // other globals
+  "globals": {
+    "define": false,
+    "require": false,
+    "ImageData": false
+  },
+  /*
+    Enforcing options
+  */
+  // dont allow bitwise operatores
+  "bitwise": true,
+  // enforce curly braces on conditionals and loops
+  "curly": false,
+  // enforce === and !==
+  "eqeqeq": true,
+  // enforce hasownproperty in for-in loops
+  "forin": true,
+  // prohibits overwriting prototypes of native objects such as Array, Date ...
+  "freeze": true,
+  // warnings about the use of identifiers which are defined in future versions
+  "futurehostile": true,
+  // prohibits the use of a variable before it was defined
+  "latedef": true,
+  // prohibit arguments.callee and caller
+  "noarg": true,
+  // prohibit comma operator, causes bugs
+  "nocomma": true,
+  // "non-breaking whitespace" characters, can be entered with option-space on
+  // Mac computers
+  "nonbsp": true,
+  // prevents calling constructor (with new) without assigning to object
+  "nonew": true,
+  // prohibits the use of the grouping operator when it is not strictly required
+  "singleGroups": true,
+  // warning about using undefined variables
+  "undef": true,
+  // warns about unused variables, strict checks variables and fn params
+  "unused": "strict",
+  /*
+    Relaxing options
+  */
+  // relaxes semi-colon enforcement.
+  "asi": true,
+  // allows person["name"] instead of person.name
+  "sub": false
+}

@@ -1,0 +1,27 @@
+{
+  "name": "js-3d-renderer",
+  "version": "1.0.0",
+  "description": "Javascript rewrite of a non-shader 3d renderer by @hollance (orig repo: Swift-3D-Demo)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danlugo92/js-3d-renderer.git"
+  },
+  "keywords": [
+    "3d",
+    "shader",
+    "canvas"
+  ],
+  "author": "danlugo92",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danlugo92/js-3d-renderer/issues"
+  },
+  "homepage": "https://github.com/danlugo92/js-3d-renderer#readme",
+  "dependencies": {
+    "gl-matrix": "2.4.0"
+  }
+}
